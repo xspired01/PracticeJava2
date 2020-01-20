@@ -17,11 +17,11 @@ public class TestConversionService {
 		System.out.println(ConversionService.pounds(7.7));
 
 		// can you figure out why these do not compile
-		//ConversionService.fluidOunces(1.1);
-		//ConversionService.grams(30L);
-		//ConversionService.milliliters(4.0);
-		//short grams = ConversionService.grams(30);
-		//byte byteGrams = ConversionService.grams(30);
+		ConversionService.fluidOunces(1.1f);
+		ConversionService.grams(30);
+		ConversionService.milliliters((int)4.0);
+		short grams = (short)ConversionService.grams(30);
+		byte byteGrams = (byte)ConversionService.grams(30);
 
 		// why do these still work even though the types are different
 		/*
