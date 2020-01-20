@@ -43,6 +43,10 @@ public class ConversionService {
 	}
 
 	public static float fluidOunces(float liters) {
+		return liters * literToFluidOunce;
+	}
+	
+	public static float gallons(float liters) {
 		return liters * literToGallon;
 	}
 
@@ -50,8 +54,8 @@ public class ConversionService {
 		return liters * literToPints;
 	}
 
-	public static int milliliters(int liters) {
-		return liters * litertoMilliliters;
+	public static int milliliters(int d) {
+		return d * litertoMilliliters;
 	}
 
 }
