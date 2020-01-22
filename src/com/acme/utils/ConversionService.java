@@ -45,7 +45,7 @@ public class ConversionService {
 	public static float fluidOunces(float liters) {
 		return liters * literToFluidOunce;
 	}
-	
+
 	public static float gallons(float liters) {
 		return liters * literToGallon;
 	}
